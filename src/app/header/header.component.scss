@@ -1,0 +1,55 @@
+pre {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 20px;
+    color: #080202;
+    font-weight: 700;
+}
+
+button {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #F1D4E5;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #F1D4E5 1px;
+    font-size: 16px;
+    color: #73BBC9;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #F1D4E5, #F1D4E5);
+    -webkit-box-shadow: -1px -5px 15px #F1D4E5, 
+                 5px  5px 15px #F1D4E5, 
+      inset      5px  5px 10px #F1D4E5, 
+      inset     -5px -5px 10px #F1D4E5;
+    box-shadow: -1px -5px 15px #F1D4E5, 
+                 5px  5px 15px #F1D4E5, 
+      inset      5px  5px 10px #F1D4E5, 
+      inset     -5px -5px 10px #F1D4E5;
+  }
+  
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #73BBC9,
+                      -1px -1px 13px #73BBC9;
+    box-shadow: 1px 1px 13px #73BBC9,
+               -1px -1px 13px #73BBC9;
+    color: #73BBC9;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #73BBC9,
+                       -1px -1px 33px #73BBC9;
+    box-shadow: 1px 1px 13px #73BBC9,
+               -1px -1px 33px #73BBC9;
+    color: #73BBC9;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }

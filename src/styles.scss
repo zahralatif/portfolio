@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as material;
+
+@include material.core();
+
+$app-primary: material.define-palette(material.$purple-palette);
+$app-accent: material.define-palette(material.$teal-palette, A200);
+$app-warn: material.define-palette(material.$red-palette);
+// extra Colors
+$custom-success: material.define-palette(material.$green-palette);
+$custom-danger: material.define-palette(material.$orange-palette);
+
+$custom-theme: material.define-light-theme((color: (primary: $app-primary,
+        accent: $app-accent,
+        warn: $app-warn,
+      ),
+    ));
+
+@include material.all-component-themes($custom-theme);
+
+
+html,
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  // background-color: #FCE9F1;
+  color: #73BBC9;
+  padding: 10px;
+  background: hsla(325, 51%, 89%, 1);
+
+background: radial-gradient(circle, hsla(325, 51%, 89%, 1) 0%, hsla(335, 76%, 95%, 1) 50%, hsla(190, 44%, 62%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(325, 51%, 89%, 1) 0%, hsla(335, 76%, 95%, 1) 50%, hsla(190, 44%, 62%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(325, 51%, 89%, 1) 0%, hsla(335, 76%, 95%, 1) 50%, hsla(190, 44%, 62%, 1) 100%);
+
+}
+
+.title-custom {
+  color: #E74C3C;
+  text-align: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
